@@ -1,0 +1,161 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="Negocios2017ModelStoreContainer" CdmEntityContainer="Negocios2017Entities2">
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="Negocios2017Model.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_abogado">
+      <EntityTypeMapping TypeName="Negocios2017Model.tb_abogado">
+        <MappingFragment StoreEntitySet="tb_abogado">
+          <ScalarProperty Name="Idabog" ColumnName="Idabog" />
+          <ScalarProperty Name="nomabog" ColumnName="nomabog" />
+          <ScalarProperty Name="dirabog" ColumnName="dirabog" />
+          <ScalarProperty Name="idpais" ColumnName="idpais" />
+          <ScalarProperty Name="sueldo" ColumnName="sueldo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_categorias">
+      <EntityTypeMapping TypeName="Negocios2017Model.tb_categorias">
+        <MappingFragment StoreEntitySet="tb_categorias">
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="NombreCategoria" ColumnName="NombreCategoria" />
+          <ScalarProperty Name="Descripcion" ColumnName="Descripcion" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_clientes">
+      <EntityTypeMapping TypeName="Negocios2017Model.tb_clientes">
+        <MappingFragment StoreEntitySet="tb_clientes">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="NombreCia" ColumnName="NombreCia" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="idpais" ColumnName="idpais" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_empleados">
+      <EntityTypeMapping TypeName="Negocios2017Model.tb_empleados">
+        <MappingFragment StoreEntitySet="tb_empleados">
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="ApeEmpleado" ColumnName="ApeEmpleado" />
+          <ScalarProperty Name="NomEmpleado" ColumnName="NomEmpleado" />
+          <ScalarProperty Name="FecNac" ColumnName="FecNac" />
+          <ScalarProperty Name="DirEmpleado" ColumnName="DirEmpleado" />
+          <ScalarProperty Name="idDistrito" ColumnName="idDistrito" />
+          <ScalarProperty Name="fonoEmpleado" ColumnName="fonoEmpleado" />
+          <ScalarProperty Name="idCargo" ColumnName="idCargo" />
+          <ScalarProperty Name="FecContrata" ColumnName="FecContrata" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_paises">
+      <EntityTypeMapping TypeName="Negocios2017Model.tb_paises">
+        <MappingFragment StoreEntitySet="tb_paises">
+          <ScalarProperty Name="Idpais" ColumnName="Idpais" />
+          <ScalarProperty Name="NombrePais" ColumnName="NombrePais" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_pedidoscabe">
+      <EntityTypeMapping TypeName="Negocios2017Model.tb_pedidoscabe">
+        <MappingFragment StoreEntitySet="tb_pedidoscabe">
+          <ScalarProperty Name="IdPedido" ColumnName="IdPedido" />
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="IdEmpleado" ColumnName="IdEmpleado" />
+          <ScalarProperty Name="FechaPedido" ColumnName="FechaPedido" />
+          <ScalarProperty Name="FechaEntrega" ColumnName="FechaEntrega" />
+          <ScalarProperty Name="FechaEnvio" ColumnName="FechaEnvio" />
+          <ScalarProperty Name="Envio" ColumnName="Envio" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="Destinatario" ColumnName="Destinatario" />
+          <ScalarProperty Name="DireccionDestinatario" ColumnName="DireccionDestinatario" />
+          <ScalarProperty Name="CiudadDestinatario" ColumnName="CiudadDestinatario" />
+          <ScalarProperty Name="RegionDestinatario" ColumnName="RegionDestinatario" />
+          <ScalarProperty Name="CodPostalDestinatario" ColumnName="CodPostalDestinatario" />
+          <ScalarProperty Name="PaisDestinatario" ColumnName="PaisDestinatario" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_productos">
+      <EntityTypeMapping TypeName="Negocios2017Model.tb_productos">
+        <MappingFragment StoreEntitySet="tb_productos">
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="NombreProducto" ColumnName="NombreProducto" />
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="IdCategoria" ColumnName="IdCategoria" />
+          <ScalarProperty Name="umedida" ColumnName="umedida" />
+          <ScalarProperty Name="PrecioUnidad" ColumnName="PrecioUnidad" />
+          <ScalarProperty Name="UnidadesEnExistencia" ColumnName="UnidadesEnExistencia" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_proveedores">
+      <EntityTypeMapping TypeName="Negocios2017Model.tb_proveedores">
+        <MappingFragment StoreEntitySet="tb_proveedores">
+          <ScalarProperty Name="IdProveedor" ColumnName="IdProveedor" />
+          <ScalarProperty Name="NombreCia" ColumnName="NombreCia" />
+          <ScalarProperty Name="NombreContacto" ColumnName="NombreContacto" />
+          <ScalarProperty Name="CargoContacto" ColumnName="CargoContacto" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="idpais" ColumnName="idpais" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="tb_pedidosdeta">
+      <EntityTypeMapping TypeName="Negocios2017Model.tb_pedidosdeta">
+        <MappingFragment StoreEntitySet="tb_pedidosdeta">
+          <ScalarProperty Name="IdPedido" ColumnName="IdPedido" />
+          <ScalarProperty Name="IdProducto" ColumnName="IdProducto" />
+          <ScalarProperty Name="PrecioUnidad" ColumnName="PrecioUnidad" />
+          <ScalarProperty Name="Cantidad" ColumnName="Cantidad" />
+          <ScalarProperty Name="Descuento" ColumnName="Descuento" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="USP_ACTUALIZAR" FunctionName="Negocios2017Model.Store.USP_ACTUALIZAR" />
+    <FunctionImportMapping FunctionImportName="USP_ELIMINAR" FunctionName="Negocios2017Model.Store.USP_ELIMINAR" />
+    <FunctionImportMapping FunctionImportName="USP_LISTAR" FunctionName="Negocios2017Model.Store.USP_LISTAR">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2017Model.USP_LISTAR_Result">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="NombreCia" ColumnName="NombreCia" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="idpais" ColumnName="idpais" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_LISTAR_CLIENTES" FunctionName="Negocios2017Model.Store.USP_LISTAR_CLIENTES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2017Model.USP_LISTAR_CLIENTES_Result">
+          <ScalarProperty Name="IdCliente" ColumnName="IdCliente" />
+          <ScalarProperty Name="NombreCia" ColumnName="NombreCia" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="nombrepais" ColumnName="nombrepais" />
+          <ScalarProperty Name="Telefono" ColumnName="Telefono" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_LISTARPAISES" FunctionName="Negocios2017Model.Store.USP_LISTARPAISES">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="Negocios2017Model.USP_LISTARPAISES_Result">
+          <ScalarProperty Name="idpais" ColumnName="idpais" />
+          <ScalarProperty Name="nombrepais" ColumnName="nombrepais" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="USP_REGISTRAR" FunctionName="Negocios2017Model.Store.USP_REGISTRAR" />
+  </EntityContainerMapping>
+</Mapping>
